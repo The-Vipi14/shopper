@@ -1,4 +1,5 @@
-import React from "react";
+import { Link } from "react-router-dom";
+
 import "./CSS/loginSignup.css";
 const LoginSignup = () => {
   return (
@@ -14,7 +15,7 @@ const LoginSignup = () => {
             <button>Continue</button>
             <p className="login-signup-login">
               Already have an acount?
-              <span>Login here</span>
+              <Link to={'/login'}>Login here</Link>
             </p>
             <div className="login-signup-agree">
               <input type="checkbox" name="" id="" />
