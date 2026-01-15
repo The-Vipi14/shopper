@@ -22,3 +22,53 @@
     gap: 30px;
 
 }
+
+
+
+@media (max-width: 1200px) {
+  .popular-item {
+    gap: 20px;
+  }
+
+  .popular h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 900px) {
+  .popular {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .popular-item {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popular h1 {
+    font-size: 32px;
+  }
+
+  .popular hr {
+    width: 140px;
+    height: 5px;
+  }
+
+  .popular-item {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .popular h1 {
+    font-size: 26px;
+  }
+
+  .popular-item {
+    gap: 16px;
+  }
+}

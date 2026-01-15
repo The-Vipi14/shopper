@@ -156,21 +156,51 @@
   .nav-drop-down.open{
     transform: rotate(90deg);
   }
-}
-@media (max-width:500px){
-    .navbar{
-        padding: 8px;
-        gap: 0;
+}@media (max-width: 500px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 12px;
+  }
 
-    }
-    .nav-logo{
-        transform: scale(0.8);
-    }
-    .nav-menu{
-        height: 70px;
-        top: 50px;
-    }
-    .nav-login-cart{
-        transform: scale(0.8);
-    }
+  .nav-logo {
+    transform: scale(0.9);
+  }
+
+  .nav-login-cart button {
+    display: none;
+  }
+
+  .nav-login-cart {
+    gap: 18px;
+  }
+
+  .nav-cart-count {
+    margin-top: -28px;
+    margin-left: -18px;
+    font-size: 12px;
+  }
+
+  .nav-drop-down {
+    width: 26px;
+  }
+
+  .nav-menu {
+    top: 56px;
+    height: auto;
+    flex-direction: column;
+    padding: 12px 0;
+    gap: 12px;
+  }
+
+  .nav-menu li {
+    font-size: 16px;
+  }
+
+  .nav-menu li:last-child::after {
+    content: "Login";
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+  }
 }
