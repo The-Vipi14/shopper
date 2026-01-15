@@ -4,7 +4,6 @@ const LoginSignup = () => {
   return (
     <div className="login-signup">
       <div className="login-signup-overlay">
-        <div className="login-signup-container">
           <div className="login-signup-container">
             <h1>Sign up</h1>
             <div className="login-signup-fields">
@@ -24,7 +23,6 @@ const LoginSignup = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
