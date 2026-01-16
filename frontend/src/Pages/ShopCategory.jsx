@@ -19,7 +19,7 @@ const ShopCategory = (props) => {
           if (props.Category===item.category) {
             return (
               <Item
-                key={i}
+                key={item.id}
                 id={item.id}
                 name={item.name}
                 image={item.image}
