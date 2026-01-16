@@ -3,6 +3,7 @@ import "./CSS/login.css";
 
 const Login = () => {
   return (
+    
     <div className="login">
       <div className="login-container">
         <h1>Login</h1>
@@ -15,7 +16,7 @@ const Login = () => {
         <button>Continue</button>
 
         <p className="login-signup-text">
-          Don't have an account? <Link to={'/signup'}>Sign up here</Link>
+          Don't have an account? <Link to={"/signup"}>Sign up here</Link>
         </p>
       </div>
     </div>

@@ -72,10 +72,23 @@
 }
 
 @media (max-width: 600px) {
+  .login {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .login-container {
-    width: 90%;
+    width: 70%;
     padding: 40px 30px;
   }
+  .login-fields input {
+  height: 45px;
+}
+.login-container button {
+  height: 45px;
+}
 
   .login-container h1 {
     font-size: 28px;
