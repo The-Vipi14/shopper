@@ -13,8 +13,8 @@ const ShopCategory = (props) => {
         <div className="shop-category-sort">
           Sort by <img src={drop_down_icon} alt="" />
         </div>
-      </div> 
-      <div className="category-products">
+      </div>
+      {/* <div className="category-products">
         {all_product.map((item, i)=>{
           if (props.Category===item.category) {
             return (
@@ -31,11 +31,24 @@ const ShopCategory = (props) => {
             console.log("not")
           }
         })}
+      </div> */}
+      <div className="category-products">
+        {all_product
+          .filter((item) => props.Category === item.category)
+          .map((item) => (
+            <Item
+              key={item.id}
+              id={item.id}
+              name={item.name}
+              image={item.image}
+              new_price={item.new_price}
+              old_price={item.old_price}
+            />
+          ))}
       </div>
-      <div className="shop-category-loadmore">
-        Explore more
-      </div>
-    </div> 
+
+      <div className="shop-category-loadmore">Explore more</div>
+    </div>
   );
 };
 
