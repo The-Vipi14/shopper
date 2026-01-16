@@ -1,4 +1,4 @@
-.login-signup{
+/* .login-signup{
     width: 100%;
     height: 700px;
     background: #fce3fe;
@@ -58,4 +58,206 @@
     font-size: 18px;
     font-weight: 600;
 }
+@media (max-width: 768px) {
+  .login-signup {
+    height: auto;
+    padding: 60px 6px;
+  }
 
+  .login-signup-container {
+    width: 100%;
+    height: auto;
+    padding: 30px 25px;
+  }
+
+  .login-signup-container h1 {
+    text-align: center;
+  }
+
+  .login-signup-container button {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .login-signup-fields input {
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .login-signup-login,
+  .login-signup-agree {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .login-signup {
+    padding-top: 40px;
+  }
+
+  .login-signup-container {
+    padding: 25px 20px;
+  }
+
+  .login-signup-container h1 {
+    font-size: 24px;
+  }
+
+  .login-signup-fields {
+    gap: 20px;
+  }
+
+  .login-signup-fields input {
+    height: 55px;
+    font-size: 15px;
+  }
+
+  .login-signup-container button {
+    height: 55px;
+    font-size: 18px;
+  }
+
+  .login-signup-login {
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .login-signup-agree {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+  }
+} */
+
+
+
+/* ===============================
+   LOGIN / SIGNUP PAGE
+================================ */
+
+.login-signup {
+    width: 100%;
+    min-height: 100vh;
+    background: #fce3fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* ===============================
+   CONTAINER
+================================ */
+
+.login-signup-container {
+    width: 90%;
+    max-width: 580px;
+    background: white;
+    padding: 30px 25px;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   TITLE
+================================ */
+
+.login-signup-container h1 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* ===============================
+   INPUT FIELDS
+================================ */
+
+.login-signup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.login-signup-fields input {
+    height: 55px;
+    width: 100%;
+    padding-left: 15px;
+    border: 1px solid #5c5c5c;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+
+.login-signup-container button {
+    width: 100%;
+    height: 55px;
+    color: white;
+    background: #ff4141;
+    margin-top: 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ===============================
+   LOGIN TEXT
+================================ */
+
+.login-signup-login {
+    margin-top: 18px;
+    color: #5c5c5c;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.login-signup-login a {
+    color: #ff4141;
+    font-weight: 600;
+    margin-left: 4px;
+    text-decoration: none;
+}
+
+/* ===============================
+   TERMS & CONDITIONS
+================================ */
+
+.login-signup-agree {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 10px;
+    color: #5c5c5c;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 480px) {
+    .login-signup-container {
+        padding: 25px 20px;
+    }
+
+    .login-signup-container h1 {
+        font-size: 24px;
+    }
+
+    .login-signup-fields input {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .login-signup-container button {
+        height: 50px;
+        font-size: 16px;
+    }
+}
