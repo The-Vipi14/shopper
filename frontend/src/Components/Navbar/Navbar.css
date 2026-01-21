@@ -11,6 +11,9 @@
   align-items: center;
   gap: 10px;
 }
+.nav-mobile-login{
+  display:none;
+}
 
 .nav-logo p {
   color: #171717;
